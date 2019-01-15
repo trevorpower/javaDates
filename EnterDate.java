@@ -25,7 +25,6 @@ public class EnterDate {
 		
 		in.close();
 	}
-	
 	/**
 	 * 
 	 * @param in - the Scanner object
@@ -34,7 +33,6 @@ public class EnterDate {
 	 * @param prompt - what the user is asked for
 	 * @return - an integer if it is valid input
 	 */
-	
 	public static int getIntegerInputInRange (Scanner in, int minimum, int maximum, String prompt) {
         
 		boolean validInput = false;
@@ -51,11 +49,8 @@ public class EnterDate {
 				in.next();
 			}
 		}
-		
 		return numberInput;
-		
 	}
-
 }
 		
 		
