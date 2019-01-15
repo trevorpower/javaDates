@@ -7,18 +7,17 @@ public class ManipulatingStrings {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        System.out.println("Enter your string: ");
-		
+		System.out.println("Enter your string: ");
+
 		Scanner in = new Scanner(System.in);
 		String encodedPhrase = in.next();
-		
+
 		// minimize repetitevness of code by storing this in variable 
 		char x = encodedPhrase.charAt(0);
-		
+
 		// store in variable so the program doesn't run the method each time
 		int len = encodedPhrase.length();
-		
-		
+
 		if (x == 'u') { // if string begins with u, convert to uppercase
 			System.out.println(encodedPhrase.toUpperCase());
 		} else if (x == 'l') { // if string begins with l, convert to lowercase
@@ -41,7 +40,5 @@ public class ManipulatingStrings {
 			int y = x-'0'; // -'0' converts the digit into an integer
 			System.out.print(encodedPhrase.substring(0, y)); // print the substring
 		} 
-
 	}
-
 }
