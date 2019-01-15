@@ -1,11 +1,9 @@
 package c2a1q3_2018_GemmaMcgee;
 
-
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
-
 
 public class CharacterMatrix {
 
@@ -19,9 +17,7 @@ public class CharacterMatrix {
 		
 		String outputString = getNewConcatenatedCharacters(x, letters);
 		
-		System.out.println(outputString);
-		
-		
+		System.out.println(outputString);	
 	}
 	
 	public static int checkIntegerInputIsValid(Scanner in, int minimum, int maximum, String prompt) {
@@ -42,8 +38,7 @@ public class CharacterMatrix {
 		}	
 		return numberInput;	
 	}
-	
-	
+
     public static String checkStringInputIsValid(Scanner in, int len, String prompt) {
 		
 		boolean validInput = false;
@@ -60,11 +55,8 @@ public class CharacterMatrix {
 				in.next();
 			}
 		}
-		
-		return stringInput;
-		
+		return stringInput;	
 	}
-    
     
     public static int[] getRandomNumbersForIndexPositions(int amount) {
     	
@@ -76,9 +68,7 @@ public class CharacterMatrix {
     		indexesOf[i] = y;
     	}
     	return indexesOf;	
-    }
-    
-    
+	}  
     
     public static String getNewConcatenatedCharacters(int size, String letters) {
     
@@ -117,9 +107,7 @@ public class CharacterMatrix {
 				gotcha += odds[l];
 			}
 		}
-
     	return "Odd letters from every odd row: " + gotcha;		 		
-    
     }
     
  // request user to enter number between 5 and 10 (x)
@@ -134,6 +122,5 @@ public class CharacterMatrix {
 // return concat characters from every odd cell from every odd row in matrix
     // assuming each line has an id find every odd numbered line
     // push the odd characters in each line to a new array and return
-
 }
     
