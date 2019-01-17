@@ -35,6 +35,7 @@ public class c2a2q2_2019_GemmaMcgee {
             in.close();
         }
     }
+	
     /**
     * check that the integer input is valid
     * @param in
@@ -62,7 +63,8 @@ public class c2a2q2_2019_GemmaMcgee {
             prompt = invalidEntry;
         }
         return letters;
-    }    
+    }  
+	
     /**
     * unicode equivalent of ( a - z ) is 97 - 123, convert letters to lowercase
     * to match this, convert to unicode equivalent and minus 96 to get 1 - 26
@@ -80,6 +82,7 @@ public class c2a2q2_2019_GemmaMcgee {
         }	
         return convertedChars;
     }    
+	
     /**
     * calculate sum of array of integers
     * @param arr
@@ -93,6 +96,7 @@ public class c2a2q2_2019_GemmaMcgee {
         }
     return sum;
     }
+	
     /**
     * taking the values and replacing unwanted characters
     * @param numbers
@@ -108,6 +112,7 @@ public class c2a2q2_2019_GemmaMcgee {
 
 	    return values;	
     }
+	
     /**
     * get a filename based on today's date
     * @return date for the filename
